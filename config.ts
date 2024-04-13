@@ -14,8 +14,8 @@ export default {
   SEO_keywords: "中微子,中微子的博客", // keywords meta header
   MSClarityId: "",                                             // Microsoft的Clarity统计，https://clarity.microsoft.com/
   CloudflareAnalyze: "",                                       // cloudflare的统计，https://developers.cloudflare.com/analytics/web-analytics
-  CommentRepoId: "",                                           // https://giscus.app/zh-CN
-  CommentDiscussionCategoryId: "",                             // https://giscus.app/zh-CN
+  CommentRepoId: "R_kgDOLtoFfQ",                                           // https://giscus.app/zh-CN
+  CommentDiscussionCategoryId: "DIC_kwDOLtoFfc4Ceqdh",                             // https://giscus.app/zh-CN
 
   Comment: {                                                   // 是否开启评论，请先设置上面的 CommentRepoId 和 CommentDiscussionCategoryId
     articles: true,                                            // “文章”是否开启评论
