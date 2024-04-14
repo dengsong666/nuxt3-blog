@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { isDev, isPrerender, translateT, useCommonSEOTitle } from "~/utils/nuxt";
-import bg from "~/assets/image/outerwilds.jpg";
 import config from "~/config";
 
 useCommonSEOTitle(computed(() => translateT("about")));
@@ -10,11 +9,13 @@ const commitUrl = computed(() => `https://github.com/${config.githubName}/${conf
 const buildTime = ref<string>("$(inject:timestamp)");
 
 const paragraphs = [
-  "幽深宇宙已岁逾百亿，惟闪烁星光点缀生机",
-  "我常仰望浩瀚天际，思念在同一颗星球的你",
-  "想，那转瞬的迷人流星，也许就是你的回眸",
-  "光坠之地，吾之忧祈",
-  "——2021.12.4"
+  "苍穹之下，宇宙以其无尽的疆域昭示着生命的渺小与伟大",
+  "我们在其广袤无垠的怀抱中，既是微不足道的尘埃，又是勇敢探索未知的智慧生命，敬畏并挑战着这宏伟的宇宙秩序",
+  "宇宙最令人难以理解的就是它的可理解性",
+  "我反复说过，在我看来人格化的上帝是幼稚的",
+  "你可以称我为不可知论者，但我并不具有专业无神论者那种十字军般的精神，他们的热情大多来自于一种从青年时期接受的宗教教育的束缚中痛苦的挣脱",
+  "我更倾向于一种谦卑的态度,以反映我们在智力上对自然和人类本身理解的微弱",
+  "如果在我的内心有什么能被称之为宗教的，那就是，对于我们的科学所能够揭示的世界结构，对于这世界结构的无垠敬仰"
 ];
 
 onBeforeMount(async () => {
@@ -26,9 +27,9 @@ onBeforeMount(async () => {
 
 <template>
   <div class="about flexc">
-    <img :src="bg" alt="bg">
+    <video src="/assets/video/galaxy.mp4" autoplay muted loop />
     <div class="flexc paragraphs">
-      <p v-for="p,idx in paragraphs" :key="idx">
+      <p v-for="p, idx in paragraphs" :key="idx">
         {{ p }}
       </p>
     </div>
@@ -55,7 +56,7 @@ onBeforeMount(async () => {
       padding-bottom: $footer-height;
       position: relative;
 
-      img {
+      video {
         position: absolute;
         top: 0;
         left: 0;

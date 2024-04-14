@@ -3,13 +3,11 @@ export default {
 
   githubName: "dengsong666",                                     // 必须修改，github账户名
 
-
-
   /** -------------------------------------------------以下可选修改----------------------------------------------------- */
 
   title: "dsblog",                                        // 网站标题
   nickName: "中微子",                                          // 昵称
-  domain: "https://blog.yunyuyuan.net",                        // rss域名
+  domain: "https://blog.dengsong.asia",                        // rss域名
   SEO_title: " - ds blog",                              // 搜索引擎显示的标题
   SEO_keywords: "中微子,中微子的博客", // keywords meta header
   MSClarityId: "",                                             // Microsoft的Clarity统计，https://clarity.microsoft.com/
